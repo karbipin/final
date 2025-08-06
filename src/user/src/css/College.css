@@ -1,0 +1,114 @@
+/* College.css */
+.college-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  text-align: left; /* Align filter section to the left */
+}
+
+.filter-section label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.filter-section select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.college-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* Spacing between cards */
+}
+
+.college-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.college-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.college-image {
+  width: 100%;
+  height: 120px; /* Smaller image height */
+  object-fit: cover; /* Ensure the image fits well */
+}
+
+.college-info {
+  padding: 10px; /* Reduced padding */
+  text-align: left; /* Align text to the left */
+}
+
+.college-info h3 {
+  font-size: 1.2rem; /* Smaller font size */
+  margin-bottom: 8px; /* Reduced margin */
+  color: #333;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.college-info p {
+  font-size: 0.9rem; /* Smaller font size */
+  color: #555;
+  margin-bottom: 8px; /* Reduced margin */
+  text-decoration: none; /* Ensure no underline */
+}
+
+.college-info a {
+  display: inline-block;
+  margin-top: 8px; /* Reduced margin */
+  color: #007bff;
+  text-decoration: none; /* Remove underline from links */
+  font-size: 0.8rem; /* Smaller font size */
+}
+
+.college-info a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .college-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .college-grid {
+    grid-template-columns: 1fr; /* 1 card per row for mobile */
+  }
+
+  .college-info h3 {
+    font-size: 1.1rem; /* Smaller font size for tablets */
+  }
+
+  .college-info p {
+    font-size: 0.8rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .college-info h3 {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .college-info p {
+    font-size: 0.75rem; /* Smaller font size for mobile */
+  }
+}

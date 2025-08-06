@@ -1,0 +1,74 @@
+
+.bannerbody {
+    
+    display: flex; /* Enable Flexbox on the body */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+   
+  }
+  
+  .quiz-banner {
+    
+    display: inline-flex; /* Keep the banner wrapping tightly around its content */
+    align-items: center;
+    background-color: #4db8ff; /* Blue background */
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: auto;
+  }
+  
+  
+  .banner-text {
+    color: #fff;
+    font-size: 16px;
+    
+  }
+  
+  .banner-button {
+    align-self: flex-end;
+    /* justify-content: end; */
+    background-color: #ffcc00; /* Yellow background */
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    border: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+  }
+  
+  .banner-button:hover {
+    background-color: #ffc107; /* Slightly darker yellow for hover */
+  }
+  .ad-mid-column {
+    display: flex; /* Ensure flexbox is active */
+    gap: 20px;
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    margin: 20px auto; /* Center the entire div horizontally on the page */
+    width: 1200px;
+}
+
+.ad-banner-mid {
+    display: flex; /* Ensure flexbox is active */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    background-color: #e0e0e0; /* Light gray background */
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px; /* Smaller padding for a compact look */
+    font-size: 16px; /* Smaller font size */
+    width: 400px; /* Adjusts to the text content's width */
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); Subtle shadow */
+    height: 80px;
+    margin: auto; /* Center the banner within the parent div */
+}
+
+
+
+  

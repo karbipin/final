@@ -1,0 +1,61 @@
+.ad-slider {
+  width: 100%;
+  overflow: hidden; /* Hide overflow */
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
+}
+
+.ad-track {
+  display: flex;
+  width: auto; /* Adjust width to fit the content */
+  gap: 20px; /* Add gap between cards */
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
+}
+
+.ad-card {
+  flex: 0 0 auto; /* Allow cards to take their natural width */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px; /* Reduced padding for a smaller card */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Set a fixed width for the card */
+  height: 90px; /* Set a fixed height for the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-card h3 {
+  font-size: 16px; /* Reduced font size for a smaller card */
+  margin-bottom: 5px; /* Adjusted margin */
+}
+
+.ad-card p {
+  font-size: 12px; /* Reduced font size for a smaller card */
+  color: #555;
+}
+
+/* Remove the @keyframes slide animation */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .ad-card {
+    width: 140px; /* Adjusted width for smaller screens */
+    height: 70px; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-card {
+    width: 120px; /* Adjusted width for mobile */
+    height: 60px; /* Adjusted height for mobile */
+  }
+}
