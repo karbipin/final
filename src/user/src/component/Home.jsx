@@ -18,7 +18,7 @@ const Home = () => {
                 <Recent/>
                 <FeatureCourses />
                 <ProgramOffered />
-                <Footer />
+                {/* <Footer /> */}
                
     </div>
   )
